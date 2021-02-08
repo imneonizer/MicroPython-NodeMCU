@@ -169,12 +169,6 @@ while True:
     
     elif mains.isactive and gen.isactive:
         # if both mains and generator is on
-
-        console.sleep(3) # generator stop ignore delay
-        if not mains.isactive:
-            # incase mains is gone, don't stop generator
-            continue
-
         if not console.observe(mains, t=5):
             # if mains is gone within 5 sec
             # ignore generator stop
