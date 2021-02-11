@@ -1,6 +1,10 @@
 from machine import Pin
 import time
 
+led = Pin(2, Pin.OUT)
+
+time.sleep(1)
+for i 
 # NodeMCU Pinout Mapping
 D0 = 16 # Gen start relay
 D1 = 5 # Gen stop relay
